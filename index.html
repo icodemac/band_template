@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -14,150 +20,156 @@
     <title>W3Schools Band Template</title>
   </head>
   <body>
-    <!-- Header -->
-    <header id="#home">
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#band">Band</a></li>
-          <li><a href="#tour">tour</a></li>
-          <li><a href="#contact">contact</a></li>
-          <li><a href="#more">More</a></li>
-        </ul>
-        <div class="search">
-          <i class="fa-solid fa-magnifying-glass"></i>
+    <main>
+      <!-- Header -->
+      <header id="#home">
+        <nav id="navbar">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#band">Band</a></li>
+            <li><a href="#tour">Tour</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#more">More</a></li>
+          </ul>
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </nav>
+        <div class="concerts">
+          <img src="img/concerts/chicago.jpg" alt="Concert in LA" />
         </div>
-      </nav>
-      <div class="concerts">
-        <img src="img/concerts/la.jpg" alt="Concert in LA" />
-      </div>
-    </header>
-    <!-- /Header -->
+      </header>
+      <!-- /Header -->
 
-    <!-- Band -->
-    <section id="band">
-      <div class="band-content">
-        <h1>The Band</h1>
-        <span class="undertext">We love music</span>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis,
-          quo quidem aliquid quisquam quasi modi, iusto exercitationem dolores,
-          quae obcaecati praesentium porro sunt ullam accusamus minus sapiente
-          voluptate doloremque sit neque nesciunt eligendi officia ea. Esse
-          nihil illo reiciendis soluta.
-        </p>
-      </div>
-      <div class="band-member__cards">
-        <div class="band-member__card">
-          <p>Name</p>
-          <img src="img/bandmember.jpg" alt="Band Member" />
+      <!-- Band -->
+      <section id="band">
+        <div class="container">
+          <div class="band-content">
+            <h1>The Band</h1>
+            <span class="undertext">We love music</span>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Corporis, quo quidem aliquid quisquam quasi modi, iusto
+              exercitationem dolores, quae obcaecati praesentium porro sunt
+              ullam accusamus minus sapiente voluptate doloremque sit neque
+              nesciunt eligendi officia ea. Esse nihil illo reiciendis soluta.
+            </p>
+          </div>
+          <div class="band-member__cards">
+            <div class="band-member__card">
+              <p>Name</p>
+              <img src="img/bandmember.jpg" alt="Band Member" />
+            </div>
+            <div class="band-member__card">
+              <p>Name</p>
+              <img src="img/bandmember.jpg" alt="Band Member" />
+            </div>
+            <div class="band-member__card">
+              <p>Name</p>
+              <img src="img/bandmember.jpg" alt="Band Member" />
+            </div>
+          </div>
         </div>
-        <div class="band-member__card">
-          <p>Name</p>
-          <img src="img/bandmember.jpg" alt="Band Member" />
-        </div>
-        <div class="band-member__card">
-          <p>Name</p>
-          <img src="img/bandmember.jpg" alt="Band Member" />
-        </div>
-      </div>
-    </section>
-    <!-- /Band -->
+      </section>
+      <!-- /Band -->
 
-    <!-- Tours -->
-    <section id="tours">
-      <h2>Tour Dates</h2>
-      <span class="undertext">Remember to book your tickets!</span>
-      <div class="tour-input">
-        <input
-          type="text"
-          name="september"
-          id="september"
-          placeholder="September"
-        />
-        <input
-          type="text"
-          name="october"
-          id="september"
-          placeholder="October"
-        />
-        <input
-          type="text"
-          name="november"
-          id="september"
-          placeholder="November"
-        />
-      </div>
-      <div class="tour-city__cards">
-        <div class="tour-city__card">
-          <img src="img/newyork.jpg" alt="New York" />
-          <p>New York</p>
-          <span class="tour-date">Fri 27 Nov 2016</span>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe,
-            beatae?
-          </p>
-          <a href="#" class="btn tour-btn">Buy Tickets</a>
+      <!-- Tours -->
+      <section id="tours">
+        <div class="tour-input">
+          <h2>Tour Dates</h2>
+          <span class="undertext">Remember to book your tickets!</span>
+          <div class="tour-input">
+            <input
+              type="text"
+              name="september"
+              id="september"
+              placeholder="September"
+            />
+            <input
+              type="text"
+              name="october"
+              id="september"
+              placeholder="October"
+            />
+            <input
+              type="text"
+              name="november"
+              id="september"
+              placeholder="November"
+            />
+          </div>
         </div>
-        <div class="tour-city__card">
-          <img src="img/paris.jpg" alt="Paris" />
-          <p>Paris</p>
-          <span class="tour-date">Sat 28 Nov 2016</span>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe,
-            beatae?
-          </p>
-          <a href="#" class="btn tour-btn">Buy Tickets</a>
+        <div class="tour-city__cards">
+          <div class="tour-city__card">
+            <img src="img/newyork.jpg" alt="New York" />
+            <p>New York</p>
+            <span class="tour-date">Fri 27 Nov 2016</span>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe,
+              beatae?
+            </p>
+            <a href="#" class="btn tour-btn">Buy Tickets</a>
+          </div>
+          <div class="tour-city__card">
+            <img src="img/paris.jpg" alt="Paris" />
+            <p>Paris</p>
+            <span class="tour-date">Sat 28 Nov 2016</span>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe,
+              beatae?
+            </p>
+            <a href="#" class="btn tour-btn">Buy Tickets</a>
+          </div>
+          <div class="tour-city__card">
+            <img src="img/sanfran.jpg" alt="San Francisco" />
+            <p>San Francisco</p>
+            <span class="tour-date">Sun 29 Nov 2016</span>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe,
+              beatae?
+            </p>
+            <a href="#" class="btn tour-btn">Buy Tickets</a>
+          </div>
         </div>
-        <div class="tour-city__card">
-          <img src="img/sanfran.jpg" alt="San Francisco" />
-          <p>San Francisco</p>
-          <span class="tour-date">Sun 29 Nov 2016</span>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe,
-            beatae?
-          </p>
-          <a href="#" class="btn tour-btn">Buy Tickets</a>
-        </div>
-      </div>
-    </section>
-    <!-- /Tours -->
+      </section>
+      <!-- /Tours -->
 
-    <!-- Contact -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <span class="undertext">Fan? Drop a note!</span>
-      <div class="contact-info">
-        <div class="contact-left">
-          <i class="fa-solid fa-location-dot"></i> Chicago, US <br />
-          <i class="fa-solid fa-phone"></i> Phone: +00 151515 <br />
-          <i class="fa-solid fa-envelope"></i> Email: mail@mail.com <br />
+      <!-- Contact -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <span class="undertext">Fan? Drop a note!</span>
+        <div class="contact-info">
+          <div class="contact-left">
+            <i class="fa-solid fa-location-dot"></i> Chicago, US <br />
+            <i class="fa-solid fa-phone"></i> Phone: +00 151515 <br />
+            <i class="fa-solid fa-envelope"></i> Email: mail@mail.com <br />
+          </div>
+          <div class="contact-right">
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <input type="text" placeholder="Message" />
+            <a href="#" class="btn contact-btn">Send</a>
+          </div>
         </div>
-        <div class="contact-right">
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <input type="text" placeholder="Message" />
-          <a href="#" class="btn contact-btn">Send</a>
+        <div class="contact-img">
+          <img src="img/map.jpg" alt="Contact Map" />
         </div>
-      </div>
-      <div class="contact-img">
-        <img src="img/map.jpg" alt="Contact Map" />
-      </div>
-    </section>
-    <!-- /Contact -->
+      </section>
+      <!-- /Contact -->
 
-    <!-- Footer -->
-    <footer>
-      <div class="socials">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-snapchat"></i>
-        <i class="fa-brands fa-pinterest"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-linkedin"></i>
-      </div>
-      <p>Powered by <a href="#">w3.css</a></p>
-    </footer>
-    <!-- /Footer -->
+      <!-- Footer -->
+      <footer>
+        <div class="socials">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-snapchat"></i>
+          <i class="fa-brands fa-pinterest"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Powered by <a href="#">w3.css</a></p>
+      </footer>
+      <!-- /Footer -->
+    </main>
   </body>
 </html>
